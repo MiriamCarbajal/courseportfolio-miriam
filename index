@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title> Miriam Carbajal </title>
+        <link rel="week03-excercise01" href="https://github.com/MiriamCarbajal/courseportfolio-miriam/blob/main/Week%2003%20Exercise%2001%3A%20Box%20Model%20Practice">
+    <head/>
+    <body>
+        <div class="card"> 
+        <h1> Miriam Carbajal </h1> 
+        <p> I am from Houston Texas and I am currently a student at Texas Tech. I am majoring in Computing Applications and minoring in Organizational Leadership.</p> 
+        </div>
+    </body>
+</head>
