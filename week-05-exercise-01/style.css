@@ -112,7 +112,7 @@ button {
     transition: color 0.5s ease;
 }
 
-.button-04:hover:before {
+.button-04::before {
     content: "Button";
     position: absolute;
     top: 0;
@@ -122,13 +122,16 @@ button {
     background-color: #049bff;
     transition: right 0.5s ease;
 }
+.button-04:hover::before {
+    left: 0;
+}
 
 .button-05 {
     background-color: #7b00ff;
     color: #000000;
     padding: 8px 20px;
     border: 1px solid #acb4e3;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: background-color 0.1s ease, color 0.3s ease;
 }
 
 .button-05:hover {
