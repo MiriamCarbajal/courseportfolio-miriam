@@ -147,8 +147,26 @@ code {
   margin-top: 80px;
 }
 
-.nav-custom {}
+.nav-centered ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 40px;
+  padding: 10px;
+  background-color: #ec32a8;
+}
 
+.nav-centered li {
+  margin: 0 20px;
+  text-align: center;
+  color:aquamarine
+  font-size:28px;
+  border: 2px dashed black;
+}
+
+.nav-centered a:hover{
+  color: #cdd5de;
+}
 .nav-custom ul {}
 
 .nav-custom li {}
