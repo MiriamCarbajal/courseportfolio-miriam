@@ -1,11 +1,11 @@
 /* My color palette */
 :root {
     --background-light: #FCF5EE;
-    --card-background: #white;
+    --card-background: white;
     --pink: #FFC4C4;
     --accent-color: #EE6983;
     --darker-color: #850e35;
-    --text-color: #black;
+    --text-color: black;
     --font-heading: 'Montserrat', sans-serif;
     --font-serif: 'Libre Baskerville', serif;
     --font-mono: 'Courier New', monospace;
@@ -99,7 +99,6 @@ nav a.active {
 main {
     max-width: 1200px;
     width: 90%;
-    margin-top: 2rem;
     padding: 2.5rem auto;
     margin: 80px auto 20px auto;
     flex: 1;
@@ -151,7 +150,7 @@ section h2 {
 }
 
 .sub-tag {
-    font: var(--font-mono);
+    font-family: var(--font-mono);
     color: var(--accent-color);
     font-size: 1.2rem;
     font-weight: bold;
@@ -179,8 +178,8 @@ section h2 {
 
 .button:hover {
     background-color:var(--darker-color);
-    box-shadow: 0 0px 15px var(--accent-pink), 0 0 30px var (--pink);
-    transform: translateY(-3px);
+    box-shadow:0 0px 15px var(--accent-color), 0 0 30px var(--pink);
+    transform:translateY(-3px);
 }
 
 
@@ -206,7 +205,8 @@ section h2 {
     border-color:var(--accent-color);
 }
 
-.project-card h3, project-card h2 {
+.project-card h3,
+.project-card h2 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
@@ -222,7 +222,7 @@ section h2 {
     font-family:var(--font-mono);
 }   
 
-.resume-lists {
+.resume-list {
     list-style: none;
     margin-top: 1rem;
 }
