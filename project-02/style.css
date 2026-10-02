@@ -32,14 +32,37 @@ body {
 header {
     background-color: var(--deep-burgundy);
     color:#FFFFFF;
-    padding: 1 rem 2 rem;
+    padding: 1.2 rem 2 rem;
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(133, 14, 53, 0.1);
+    box-shadow: 0 4px 10px rgba(133, 14, 53, 0.15);
 
 }
 
+.header ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1rem;
+}
+
+.header a{
+    text-decoration: none;
+    color: var(--background-light);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+.header a:hover, .header a.active {
+    color: white;
+    background-color: var(--accent-color);
+    box-shadow: 0 0 12px var(--accent-color);
+}
 header h1, .logo-title {
     font-family: var(--font-serif);
     font-size: 1.5rem;
@@ -70,9 +93,9 @@ nav a:hover, nav a.active {
 }
 
 main {
-    max-width: 850px;
+    max-width: 900px;
     width: 90%;
-    padding: 2rem auto;
+    padding: 2.5rem auto;
     flex: 1;
 }
 
@@ -97,6 +120,11 @@ section h2 {
 
 .hero {
     text-align: center;
+    background-color: var(--card-background);
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 2rem auto;
 }
 
 .profile-picture {
