@@ -28,3 +28,225 @@ body {
     flex-direction: column;
     min-height: 110vh;
 }
+
+header {
+    background-color: var(--deep-burgundy);
+    color:#FFFFFF;
+    padding: 1 rem 2 rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(133, 14, 53, 0.1);
+
+}
+
+header h1, .logo-title {
+    font-family: var(--font-serif);
+    font-size: 1.5rem;
+    color: var(--background-light);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}   
+
+nav a {
+    text-decoration: none;
+    color: var(--background-light);
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+nav a:hover, nav a.active {
+    color:white;
+    background-color: var(--darker-color);
+    box-shadow: 0 0 12px var(--darker-color);
+
+}
+
+main {
+    max-width: 850px;
+    width: 90%;
+    padding: 2rem auto;
+    flex: 1;
+}
+
+section{
+    background-color: var(--card-background);
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.content-box {
+    background-color: var(--card-background);
+}
+
+section h2 {
+    font-family: var(--font-serif);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--darker-color);
+}
+
+.hero {
+    text-align: center;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: 4px solid var(--accent-color);
+    margin: 1 rem 0 1.5rem 0;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-picture:hover {
+
+   transform: scale(1.05);
+   box-shadow: 0 4px 20px var(--pink);
+}
+
+.sub-tag {
+    font: var(--font-mono);
+    color: var(--accent-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+
+.button{
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--accent-color);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    font-weight: 600;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(238, 105, 153, 0.3);
+}
+
+.button:hover {
+    background-color: var(--darker-color);
+    box-shadow: 0 0px 15px var(--accent-pink), 0 0 30px var (--pink);
+    transform: translateY(-3px);
+}
+
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.project-card {
+    background-color: var(--card-background);
+    padding: 1rem;
+    border-radius: 12px;
+    border: 1px solid var(--pink);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(238, 105, 153, 0.1);
+    border-color: var(--accent-color);
+}
+
+.project-card h3, project-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.code-badge {
+    display: inline-block;
+    padding: 0.2rem 0.5rem;
+    background-color: var(--background-color);
+    color: var(--darker-color);
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-mono);
+}   
+
+.resume-lists {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.resume-list li{
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--accent-color);
+}
+.resume-list h3, .resume-list h4 {
+    font-size: 1.5rem;
+    font-family: var(--font-heading);
+    color: var(--darker-color);
+}
+
+.resume-date {
+    font-size: 1.2rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    font-family: var(--font-mono);
+    margin-bottom: 0.5rem;
+}
+
+.facts-list {
+    list-style: none;
+    margin-top: 1rem;
+}
+
+.facts-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    border-left: 3px solid var(--pink);
+}
+
+.footer {
+    background-color: var(--deep-burgundy);
+    color: var(--background-light);
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 0.9rem;
+    margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+    }
+
+}
