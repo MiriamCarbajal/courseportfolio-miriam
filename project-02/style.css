@@ -1,0 +1,12 @@
+/* My color palette */
+:root {
+    --background-light: #FCF5EE;
+    --card-background: #white;
+    --pink: #FFC4C4;
+    --accent-color: #EE6983;
+    --darker-color: #850e35;
+    --text-color: #black;
+    --font-heading: 'Montserrat', sans-serif;
+    --font-serif: 'Libre Baskerville', serif;
+    --font-mono: 'Courier New', monospace;
+}
